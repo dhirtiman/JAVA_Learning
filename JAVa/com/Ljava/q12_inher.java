@@ -22,9 +22,10 @@ class Dervd extends Sum {
 
         super(x, y);
     }
-    void sumOfXY(){
-        int sum = x+y;
-        System.out.println("The sum of "+x+" and "+y+" is: "+sum);
+
+    void sumOfXY() {
+        int sum = x + y;
+        System.out.println("The sum of " + x + " and " + y + " is: " + sum);
     }
 }
 

@@ -4,31 +4,30 @@ import java.util.Scanner;
 
 public class q5 {
 
-    public static void main(String args[])
-    {
+    public static void main(String args[]) {
         int n;
-        int i,m=0,flag = 0;
+        int i, m = 0, flag = 0;
         Scanner in = new Scanner(System.in);
-        try{
-        System.out.println("Enter the number:");
-        n =  in.nextInt();
+        try {
+            System.out.println("Enter the number:");
+            n = in.nextInt();
 
-        m = n/2;
-        if(n==0||n==1){
-            System.out.println( n + " is not a prime number");
-        }
-        else{
-            for(i=2;i<=m;i++){
-                if(n%i==0){
-                    System.out.println( n + " is not a prime number");
-                    flag = 1;
-                    break;
+            m = n / 2;
+            if (n == 0 || n == 1) {
+                System.out.println(n + " is not a prime number");
+            } else {
+                for (i = 2; i <= m; i++) {
+                    if (n % i == 0) {
+                        System.out.println(n + " is not a prime number");
+                        flag = 1;
+                        break;
+                    }
+                }
+                if (flag == 0) {
+                    System.out.println(n + " is a prime number");
                 }
             }
-            if(flag==0){System.out.println(n+" is a prime number");}
-        }
-        }
-        finally{
+        } finally {
             in.close();
         }
     }
