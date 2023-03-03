@@ -48,7 +48,7 @@ public class q7_String {
         System.out.println("");
 
         System.out.println("Comparing String 1 and String 2");
-        if(s1.equals(s2)==true)
+        if(s1.equals(s2))
         {
             System.out.println(s1+" and "+s2+"are equal");
 
