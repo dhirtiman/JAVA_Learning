@@ -14,9 +14,9 @@ public class q8_Distance {
         y2 = d;
     }
 
-    void distance() {
+    float distance() {
         float dis = (float) Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        System.out.println("The distance between the two points is " + dis);
+        return dis;
 
     }
 
@@ -37,7 +37,7 @@ public class q8_Distance {
             d = s.nextInt();
 
             q8_Distance di = new q8_Distance(a, b, c, d);
-            di.distance();
+            System.out.println("The distance between the two points is "+di.distance());
         } finally {
             s.close();
         }
